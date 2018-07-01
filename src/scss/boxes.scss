@@ -1,0 +1,106 @@
+
+.compomentbox{
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.news-text{
+    font-size:  3.2rem;
+    text-align: center;
+    color: $black;
+}
+
+.allinboxes{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+        padding-top: $space;
+        padding-bottom: $space;
+        display: inline-block;
+    }
+}
+
+.box-header{
+    line-height: 3.2rem;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: $font-size-h3;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.box-text{
+    text-align: center;   
+    padding-bottom: 50px;
+    font-size: 1.6rem;
+    color: $gray-2;
+    line-height: 2.6rem;
+}
+
+.sign{
+    width: 100%;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #b7b7b7;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: $gray;
+    }
+}
+
+.tweet {
+    display: flex;
+    justify-content: center;
+    &_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 255px;
+        width: 100%;
+        margin-top: 2*$space;
+        padding: $space 2*$space;
+        background: linear-gradient(to right, rgba(255,255,255,.4), rgba(255,255,255,.4)), url('../img/cup-of-coffe.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &_wrap {
+        width: 100%;
+    }
+    &_title {
+        padding-top: 89px;
+        text-align: left;
+        max-width: 30%;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Roboto Slab, Light;
+
+    }
+    &_text {
+        padding-top: $space;
+        padding-bottom: 2*$space;
+        text-align: left;
+        max-width:30%;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Poppins, SemiBold;
+}
+}

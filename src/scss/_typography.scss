@@ -1,0 +1,43 @@
+.heading-secondary{
+    font-size: $font-size-h2;
+    color: $blue--dark;
+}
+
+.paragraph{
+    font-size: $font-size-body;
+    color: $gray-2;
+}
+
+body{
+    font-family: $font-1;
+}
+
+h1,h2,h3,h4{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+.hero{
+    h1{
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 32px;
+        color: $white;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 54px;
+        color: $white;
+    }
+}
+
+p,a{
+    font-size: 1.2rem;
+}

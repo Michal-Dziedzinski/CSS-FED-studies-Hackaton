@@ -1,0 +1,52 @@
+.team{
+    padding: 100px 0;
+    background-color: #f8f8f8;
+    position: relative;
+    &__member{
+        display: flex;
+        flex-wrap: nowrap;
+        &-description{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 100px;
+            p{
+                font-size: 2.4rem;
+                color:$gray-2;
+                position: relative;
+                &:first-child::after{
+                    content: '\0201C';
+                    position: absolute;
+                    top: -30px;
+                    left: -40px;
+                    font-size: 70px;
+                }
+            }
+            .team__member__caption{
+                font-size: 1.6rem;
+                align-self: flex-start;
+                margin-top: 50px;
+                span{
+                    color: $black;
+                }
+            }
+        }
+
+    }
+
+    &__bullets{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        span {
+            width: 8px;
+            height: 8px;
+            margin: 0 6px;
+            background-color: $blue;
+            border-radius: 50%;
+        }
+    }
+}

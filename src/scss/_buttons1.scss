@@ -1,0 +1,42 @@
+.btn {
+    padding: 15px 50px;
+    transition: all .3s;
+    border-radius: 4px;
+    text-transform: capitalize;
+    &-primary{
+        padding: 15px 50px;
+        border: 1px solid $white;
+        background-color: transparent;
+        transition: all .3s;
+        border-radius: 4px;
+        text-transform: capitalize;
+        &:hover{
+            background-color: $purple;
+            border-color: $purple;
+        }
+    }
+    &--purple{
+        &,
+        &:link,
+        &visited{
+            background-color: $purple;
+            color: $white;
+            text-transform: uppercase;
+            padding: 1.5rem 6rem;
+            text-decoration: none;
+            transition: all .2s;
+            position: relative;
+            border: 1px solid $white;
+            cursor: pointer;
+            
+        }
+       
+        &:hover{
+            border: 1px solid $purple;
+            color: $purple;
+            background-color: transparent;
+            box-shadow: 0 1rem 2rem rgba($black, .3);
+            // box-shadow: 
+        }
+    }
+}

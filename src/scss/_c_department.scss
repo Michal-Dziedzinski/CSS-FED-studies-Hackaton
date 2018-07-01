@@ -1,0 +1,116 @@
+.department{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__box{
+
+        flex-basis: 50%;
+        @media (max-width:992px){
+            flex-basis: 100%;
+        }
+        position: relative;
+        border: 1px solid #DADADA;
+
+        &--1{
+            .department__box-icon::before{
+                background-image: url('../img/keyboard.png'); 
+            }
+            .department__box-bottom{
+                background-image: url('../img//dep-1.jpg')
+            }
+        }
+        &--2{
+            .department__box-icon::before{
+                background-image: url('../img/desktop.png'); 
+            }
+            .department__box-bottom{
+                background-image: url('../img//dep-2.jpg')
+            }
+        }
+        &--3{
+            .department__box-icon::before{
+                background-image: url('../img/phone-call.png'); 
+            }
+            .department__box-bottom{
+                background-image: url('../img//dep-3.jpg')
+            }
+        }
+        &--4{
+            .department__box-icon::before{
+                background-image: url('../img/laptop.png'); 
+            }
+            .department__box-bottom{
+                background-image: url('../img//dep-4.jpg')
+            }
+        }
+
+        &-icon{
+            position: absolute;
+            background-color: $purple;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            @include absCenter;
+            z-index: 2;
+            &::before{
+                
+                content: '';
+                display: block;
+                position: absolute;
+                @include absCenter;
+                width: 34px;
+                height: 34px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        &-top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            border-bottom: 1px solid #DADADA;
+            transition: all .3s;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: normal;
+                transition: all .3s;
+            }
+        }
+    
+        &-bottom{
+            min-height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba($white, .7);
+                transition: all .3s;
+            }
+        }
+
+        &:hover{
+            .department__box-bottom::before{
+                background-color: rgba($purple, .7)
+            }
+            .department__box-top{
+                h3{
+                    color: $white;
+                }
+                background-color: $purple;
+                border-bottom-color: $purple;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,23 @@
+.btn {
+    &-primary{
+        padding: 15px 50px;
+        border: 1px solid $white;
+        background-color: transparent;
+        transition: all .3s;
+        border-radius: 4px;
+        text-transform: capitalize;
+        color: $white;
+        text-decoration: none;
+        &--purple{
+            border: 1px solid $purple !important; // symbol nienawisci
+            color: $purple;
+            &:hover{
+                color: $white;
+            }
+        }
+        &:hover{
+            background-color: $purple;
+            border-color: $purple;
+        }
+    }
+}
